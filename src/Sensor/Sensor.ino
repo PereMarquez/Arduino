@@ -1,16 +1,8 @@
-// -*-c++-*-
-
 // --------------------------------------------------------------
 //
-// Jordi Bataller i Mascarell
-// 2019-07-07
+// Pere Márquez Barber
+// Sprint 0-GTI 3A 
 //
-// --------------------------------------------------------------
-
-// https://learn.sparkfun.com/tutorials/nrf52840-development-with-arduino-and-circuitpython
-
-// https://stackoverflow.com/questions/29246805/can-an-ibeacon-have-a-data-payload
-
 // --------------------------------------------------------------
 // --------------------------------------------------------------
 #include <bluefruit.h>
