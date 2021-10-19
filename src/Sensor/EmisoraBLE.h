@@ -2,8 +2,10 @@
 //
 // Pere Márquez Barber
 // Sprint 0-GTI 3A 
+// EmisoraBLE.h
 //
 // --------------------------------------------------------------
+// 
 // --------------------------------------------------------------
 #ifndef EMISORA_H_INCLUIDO
 #define EMISORA_H_INCLUIDO

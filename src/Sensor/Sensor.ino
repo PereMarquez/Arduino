@@ -2,8 +2,10 @@
 //
 // Pere Márquez Barber
 // Sprint 0-GTI 3A 
+// Sensor.ino
 //
 // --------------------------------------------------------------
+//Archivo .ino, encargado del funcionamiento del proyecto, al abrir puerto serie empieza la transmisión de beacons
 // --------------------------------------------------------------
 #include <bluefruit.h>
 
