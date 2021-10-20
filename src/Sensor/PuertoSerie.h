@@ -16,6 +16,12 @@ class PuertoSerie  {
 public:
   // .........................................................
   // .........................................................
+  /**
+   * Constructor
+   *
+   * @param {long} baudios
+   *
+   */
   PuertoSerie (long baudios) {
 	Serial.begin( baudios );
 	// mejor no poner esto aquí: while ( !Serial ) delay(10);   
@@ -23,6 +29,10 @@ public:
 
   // .........................................................
   // .........................................................
+  /**
+   * esperarDisponible()
+   * 
+   */
   void esperarDisponible() {
 
 	while ( !Serial ) {
@@ -34,6 +44,12 @@ public:
   // .........................................................
   // .........................................................
   template<typename T>
+  /**
+   * T -> escribir()
+   *
+   * @param {T} mensaje
+   *
+   */
   void escribir (T mensaje) {
 	Serial.print( mensaje );
   } // ()

@@ -47,6 +47,10 @@ public:
 
   // ............................................................
   // ............................................................
+  /**
+   * Constructor 
+   *
+   */
   Publicador( ) {
 	// ATENCION: no hacerlo aquí. (*this).laEmisora.encenderEmisora();
 	// Pondremos un método para llamarlo desde el setup() más tarde
@@ -54,12 +58,24 @@ public:
 
   // ............................................................
   // ............................................................
+   /**
+   * encenderEmisora()
+   *
+   */
   void encenderEmisora() {
 	(*this).laEmisora.encenderEmisora();
   } // ()
 
   // ............................................................
   // ............................................................
+  /**
+   * int16_t,uint8_t,long -> publicarCO2()
+   *
+   * @param {int16_t} valorCO2 
+   * @param {uint8_t} contador 
+   * @param {long} tiempoEspera
+   *
+   */
   void publicarCO2( int16_t valorCO2, uint8_t contador,
 					long tiempoEspera ) {
 
@@ -95,6 +111,14 @@ public:
 
   // ............................................................
   // ............................................................
+  /**
+   * int16_t,uint8_t,long -> publicarTemperatura()
+   *
+   * @param {int16_t} valorTemperatura 
+   * @param {uint8_t} contador
+   * @param {long} tiempoEspera
+   *
+   */
   void publicarTemperatura( int16_t valorTemperatura,
 							uint8_t contador, long tiempoEspera ) {
 
