@@ -41,7 +41,7 @@ public:
    * @returns 235
    */
   int medirCO2() {
-	return 235;
+	  return 235;
   } // ()
 
   // .....................................................
@@ -51,7 +51,7 @@ public:
    * @returns -12
    */
   int medirTemperatura() {
-	return -12; // qué frío !
+	  return 4321; // qué frío !
   } // ()
 	
 }; // class

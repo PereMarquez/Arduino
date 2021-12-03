@@ -55,7 +55,7 @@ void setup() {
   // 
   // 
   // 
-  inicializarPlaquita();
+  //inicializarPlaquita();
 
   // Suspend Loop() to save power
   // suspendLoop();
@@ -161,7 +161,7 @@ void loop () {
   // elPublicador.laEmisora.emitirAnuncioIBeaconLibre ( &datos[0], 21 );
   elPublicador.laEmisora.emitirAnuncioIBeaconLibre ( "MolaMolaMolaMolaMolaM", 21 );
   */
-  esperar( 2000 );
+  esperar( 1000 );
 
   elPublicador.laEmisora.detenerAnuncio();
   

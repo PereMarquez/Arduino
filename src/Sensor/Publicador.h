@@ -78,35 +78,35 @@ public:
    */
   void publicarCO2( int16_t valorCO2, uint8_t contador,
 					long tiempoEspera ) {
+  
+  	//
+  	// 1. empezamos anuncio
+  	//
+  	(*this).laEmisora.emitirAnuncioIBeacon( (*this).beaconUUID, 
+  											MedicionesID::CO2,
+  											valorCO2, // minor
+  											(*this).RSSI // rssi
+  									);
 
-	//
-	// 1. empezamos anuncio
-	//
-	(*this).laEmisora.emitirAnuncioIBeacon( (*this).beaconUUID, 
-											MedicionesID::CO2,
-											valorCO2, // minor
-											(*this).RSSI // rssi
-									);
-
-	/*
-	Globales::elPuerto.escribir( "   publicarCO2(): valor=" );
-	Globales::elPuerto.escribir( valorCO2 );
-	Globales::elPuerto.escribir( "   contador=" );
-	Globales::elPuerto.escribir( contador );
-	Globales::elPuerto.escribir( "   todo="  );
-	Globales::elPuerto.escribir( major );
-	Globales::elPuerto.escribir( "\n" );
-	*/
-
-	//
-	// 2. esperamos el tiempo que nos digan
-	//
-	esperar( tiempoEspera );
-
-	//
-	// 3. paramos anuncio
-	//
-	(*this).laEmisora.detenerAnuncio();
+  	/*
+  	Globales::elPuerto.escribir( "   publicarCO2(): valor=" );
+  	Globales::elPuerto.escribir( valorCO2 );
+  	Globales::elPuerto.escribir( "   contador=" );
+  	Globales::elPuerto.escribir( contador );
+  	Globales::elPuerto.escribir( "   todo="  );
+  	Globales::elPuerto.escribir( major );
+  	Globales::elPuerto.escribir( "\n" );
+  	*/
+  
+  	//
+  	// 2. esperamos el tiempo que nos digan
+  	//
+  	esperar( tiempoEspera );
+  
+  	//
+  	// 3. paramos anuncio
+  	//
+  	(*this).laEmisora.detenerAnuncio();
   } // ()
 
   // ............................................................
